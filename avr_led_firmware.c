@@ -1,5 +1,5 @@
 #define F_CPU 16000000UL
-#define PIN2 = 2 , PIN4 = 4 ,PIN7 = 7 
+
 #include <avr/io.h>
 #include <util/delay.h>
 
