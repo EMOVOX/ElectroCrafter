@@ -1,0 +1,43 @@
+<circuit version="1.1.0" rev="1912+dfsg-4build2" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Resistor" CircId="Resistor-33" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-368,32" rotation="0" hflip="1" vflip="1" label="Resistor-33" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="20 Ω" />
+
+<item itemtype="LedRgb" CircId="LedRgb-27" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,80" rotation="0" hflip="1" vflip="1" label="LedRgb-27" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CommonCathode="true" Threshold_R="2.4 V" MaxCurrent_R="0.03 A" Resistance_R="0.6 Ω" Threshold_G="3.5 V" MaxCurrent_G="0.03 A" Resistance_G="0.6 Ω" Threshold_B="3.5 V" MaxCurrent_B="0.03 A" Resistance_B="0.6 Ω" />
+
+<item itemtype="LedRgb" CircId="LedRgb-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,56" rotation="0" hflip="1" vflip="1" label="LedRgb-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CommonCathode="true" Threshold_R="3 V" MaxCurrent_R="0.03 A" Resistance_R="0.6 Ω" Threshold_G="3 V" MaxCurrent_G="0.03 A" Resistance_G="0.6 Ω" Threshold_B="3.5 V" MaxCurrent_B="0.03 A" Resistance_B="0.6 Ω" />
+
+<item itemtype="MCU" CircId="mega328-24" mainComp="false" Show_id="true" Show_Val="false" Pos="-540,-24" rotation="0" hflip="1" vflip="1" label="mega328-24" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Desktop/repos/Learning/AVR_Traffic_Light.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-30" mainComp="false" Show_id="false" Show_Val="false" Pos="-344,52" rotation="0" hflip="1" vflip="1" label="Ground-30" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="LedRgb" CircId="LedRgb-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,32" rotation="0" hflip="1" vflip="1" label="LedRgb-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CommonCathode="true" Threshold_R="2.4 V" MaxCurrent_R="0.03 A" Resistance_R="0.6 Ω" Threshold_G="3.5 V" MaxCurrent_G="0.03 A" Resistance_G="0.6 Ω" Threshold_B="3.5 V" MaxCurrent_B="0.03 A" Resistance_B="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-29" mainComp="false" Pos="-396,56" />
+
+<item itemtype="Node" CircId="Node-41" mainComp="false" Pos="-428,56" />
+
+<item itemtype="Node" CircId="Node-34" mainComp="false" Pos="-396,32" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Node-29-1" endpinid="LedRgb-27-Pin3" pointList="-396,56,-396,80" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="Resistor-33-rPin" endpinid="Ground-30-Gnd" pointList="-352,32,-344,32,-344,36" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="Node-41-1" endpinid="mega328-24-PORTB4" pointList="-428,56,-436,56,-436,64,-500,64" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="LedRgb-25-Pin3" endpinid="Node-34-0" pointList="-396,32,-396,32" />
+
+<item itemtype="Connector" uid="Connector-49" startpinid="Node-34-2" endpinid="Node-29-0" pointList="-396,32,-396,56" />
+
+<item itemtype="Connector" uid="Connector-81" startpinid="Node-41-2" endpinid="LedRgb-26-Pin1" pointList="-428,56,-428,56" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="LedRgb-25-Pin0" endpinid="mega328-24-PORTB5" pointList="-428,24,-444,24,-444,56,-500,56" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="LedRgb-27-Pin1" endpinid="mega328-24-PORTB3" pointList="-428,80,-436,80,-436,72,-500,72" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="LedRgb-26-Pin0" endpinid="Node-41-0" pointList="-428,48,-428,56" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Node-29-2" endpinid="LedRgb-26-Pin3" pointList="-396,56,-396,56" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Node-34-1" endpinid="Resistor-33-lPin" pointList="-396,32,-384,32" />
+
+</circuit>
